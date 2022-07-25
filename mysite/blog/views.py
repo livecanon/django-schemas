@@ -16,3 +16,14 @@ def post_detail(request, id):
         'post': post
     }
     return render(request, 'blog/post.html', context=context)
+
+
+def post_create(request):
+    if request.method == 'POST':
+        title = request.POST.get('title')
+        content = request.POST.get('content')
+        Post.objects.create(title=title, content=content)
+        response = redirect('/blog')
+        return response
+
+    return render(request, 'blog/create.html')
