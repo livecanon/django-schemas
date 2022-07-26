@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
 from .models import Post
+from django.contrib.auth.decorators import login_required
 
 
 def post_list(request):
@@ -18,6 +19,7 @@ def post_detail(request, id):
     return render(request, 'blog/post.html', context=context)
 
 
+@login_required
 def post_create(request):
     if request.method == 'POST':
         title = request.POST.get('title')

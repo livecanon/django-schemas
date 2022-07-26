@@ -1,0 +1,9 @@
+{% extends 'generic/base.html' %}
+
+{% block content %}
+    <h1>Logout</h1>
+    <form method='POST'>
+        {% csrf_token %}
+        <input type='submit' placeholder='logout'/>
+    </form>
+{% endblock content %}
