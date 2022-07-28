@@ -1,0 +1,39 @@
+{% extends "generic/base.html" %}
+
+{% block title %}Sign In{% endblock title %}
+{% block content %}
+    <div class='card w-50 mx-auto'>
+       <div class='card-body'>
+            <h5 class="card-title">Sign In</h5>
+            <form action="/auth/login/" method="POST">
+                {% csrf_token %}
+                <div class='mb-3'>
+                    <label for="username" class="form-label">Username</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="username" 
+                        name="username" 
+                        aria-describedby="inputGroupPrepend" r
+                        required
+                    >
+                </div>
+                <div class='mb-3'>
+                    <label for="password" class="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        class="form-control" 
+                        id="password" 
+                        name="password" 
+                        aria-describedby="inputGroupPrepend" r
+                        required
+                    >
+                </div>
+                {% if error %}
+                    <p class='text-danger'>{{error}}</p>
+                {% endif %}                
+                <input type='submit' class='btn btn-primary w-100' value="Sign in"/>
+            </form>
+       </div>
+    </div>
+{% endblock content %}

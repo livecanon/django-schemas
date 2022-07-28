@@ -1,7 +1,9 @@
-{% include "generic/base.html" %}
+{% extends "generic/base.html" %}
 
 {% block title %}Posts{% endblock title %}
+
 {% block content %}
+    <h2>Posts</h2>
     <ul>    
         {% for post in posts %}
             <li>
