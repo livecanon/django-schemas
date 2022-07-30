@@ -3,7 +3,7 @@ from django.views.generic import ListView, DeleteView
 
 class PostList(ListView):
     # model = Post
-    paginate_by = 2
+    paginate_by = 3
     template_name = 'blog/posts.html'
     context_object_name = 'posts'
     queryset = Post.objects.filter(status='published').order_by('-last_modified')
