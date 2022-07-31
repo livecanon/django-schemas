@@ -1,0 +1,22 @@
+{% extends "generic/base.html" %}
+
+{% block title %}Sign Up{% endblock title %}
+{% block content %}
+    <div class='card w-50 mx-auto'>
+        <div class='card-body'>
+             <h5 class="card-title">Sign Up</h5>
+             <form action="/auth/signup/" method="POST">
+                {% csrf_token %}
+                {% for field in form %}
+                  <div class='mb-3'>
+                     <label class="form-label" for="{{ field.auto_id }}">{{ field.label }}</label>
+                     {{ field }}
+                     <div class='field-error'>{{field.errors}}</div>
+                  </div>
+                {% endfor %}
+                <p>Already have an account ? <a href="/auth/login/">Sign in</a> </p>             
+                <input type='submit' class='btn btn-primary w-100' value="Sign in"/>
+             </form>
+        </div>
+     </div>
+{% endblock content %}

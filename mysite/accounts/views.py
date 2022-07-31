@@ -1,6 +1,11 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
+from django.views.generic import CreateView
+from django.contrib.messages.views import SuccessMessageMixin
+from .forms import CustomUserCreationForm
+
 
 
 def login_view(request):
@@ -27,3 +32,14 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('/auth/login/')
+
+
+class SignUpView(SuccessMessageMixin, CreateView):
+    # see https://docs.djangoproject.com/en/4.0/ref/contrib/messages/#displaying-messages
+    # see https://stackoverflow.com/questions/62935406
+    # see https://docs.djangoproject.com/en/4.0/topics/auth/default/#django.contrib.auth.forms.UserCreationForm
+    model = User
+    template_name = 'accounts/register.html'
+    form_class = CustomUserCreationForm
+    success_url = '/auth/login'
+    success_message = "User was created successfully. You can sign in now :)"

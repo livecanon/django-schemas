@@ -1,0 +1,14 @@
+.field-error .errorlist {
+    list-style: none;
+    color: #dc3545;
+    padding-left: 2px;
+}
+
+.messages {
+    list-style: none;
+    text-align: center;
+}
+
+.messages .success {
+    font-size: 1.25rem;
+}
