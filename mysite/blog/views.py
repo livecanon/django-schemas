@@ -26,7 +26,10 @@ class PostCreate(LoginRequiredMixin, CreateView):
     form_class = PostForm
     success_url = '/blog'
 
+    # see https://docs.djangoproject.com/en/4.0/topics/class-based-views/generic-editing/#model-forms
     def form_valid(self, form):
+        # This method is called when valid form data has been POSTed.
+        # It should return an HttpResponse.
         form.instance.author = self.request.user
         form.instance.status = 'published'
         return super().form_valid(form)
