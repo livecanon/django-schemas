@@ -2,4 +2,14 @@
 
 {% block content %}
     <h1>Single Project</h1>
+    <hr/>
+    <h2>{{project.title}}</h2>
+    <hr/>
+        <ul>
+            {% for tag in project.tags.all %}
+                <li>{{tag.name}}</li>
+            {% endfor %}
+        </ul>
+    <hr/>
+    <h3>{{project.description}}</h3>
 {% endblock content %}
