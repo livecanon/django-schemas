@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 # from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import messages
 from .forms import CustomUserCreationForm, ProfileForm, SkillForm
+from .utils import searchProfiles
 
 
 def loginUser(request):
@@ -31,7 +32,7 @@ def loginUser(request):
 
         if user is not None:
             login(request, user) # creates a session
-            return redirect('user-account')
+            return redirect('account')
         else:
             messages.error(request, 'Username or password is incorrect')
 
@@ -72,10 +73,12 @@ def logoutUser(request):
 
 
 def profiles(request):
-    profiles = Profile.objects.all()
+
+    profiles, search_query = searchProfiles(request)
 
     context = {
-        'profiles': profiles
+        'profiles': profiles,
+        'search_query': search_query, # keep search value in input
     }
     
     return render(request, 'users/profiles.html', context)
