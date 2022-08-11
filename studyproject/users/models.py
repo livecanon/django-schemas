@@ -1,3 +1,4 @@
+from calendar import c
 from django.db import models
 from django.contrib.auth.models import User
 import uuid
@@ -34,3 +35,24 @@ class Skill(models.Model):
     
     def __str__(self):
         return self.name
+
+
+class Message(models.Model):
+    # we have to relations here, we have to give related_name at least to one of these fields,
+    # otherwise we won't be able to use this.
+    sender = models.ForeignKey(Profile, null=True, blank=True, on_delete=models.SET_NULL)
+    recipient = models.ForeignKey(Profile, null=True, blank=True, on_delete=models.SET_NULL, related_name='messages')
+
+    name = models.CharField(max_length=200, null=True, blank=True)
+    email = models.EmailField(max_length=200, null=True, blank=True)
+    subject = models.CharField(max_length=200, null=True, blank=True)
+    body = models.TextField()
+    is_read = models.BooleanField(default=False, null=True)
+    created = models.DateTimeField(auto_now_add=True)
+    id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
+
+    class Meta:
+        ordering = ['is_read', '-created']
+
+    def __str__(self):
+        return self.subject
