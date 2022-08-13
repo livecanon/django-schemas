@@ -211,6 +211,7 @@ def inbox(request):
 def viewMessage(request, pk):
     profile = request.user.profile
     message = profile.messages.get(id=pk)
+
     if not message.is_read:
         message.is_read = True
         message.save()
@@ -225,7 +226,7 @@ def createMessage(request, pk):
     recipient = Profile.objects.get(id=pk)
     form = MessageForm()
     try:
-        sender = request.POST.get('sender')
+        sender = request.user.profile
     except:
         sender = None
 
