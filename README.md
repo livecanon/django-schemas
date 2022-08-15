@@ -9,6 +9,7 @@ Credentials:
 ---
 
 Course: https://dennisivy.teachable.com/courses/1446896/lectures/33189238
+
 Github: https://github.com/divanov11/Django-2021
 
 ---
