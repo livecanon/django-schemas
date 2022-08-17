@@ -10,7 +10,35 @@
     {{post.body|linebreaks}}
     <p>
         <a href="{% url 'blog:post_share' post.id %}">
-            Share post
+            Udostępnij posta
         </a>
     </p>
+    {% comment %} 
+        Znacznik 'with' szablonu okazuje się uyteczny, gdy chcemy uniknąć wykonania zapytania
+        do bazy danych lub wielokrotnego uzyskania dostępu do kosztownych metod.
+    {% endcomment %}
+    {% with comments.count as total_comments %}
+        <h2>
+            {{total_comments}} komentarz{{total_comments|pluralize:'y'}}
+        </h2>
+    {% endwith %}
+    {% for comment in comments %}
+        <div class='comment'>
+            <p class='info'>
+                Komentarz {{forloop.counter}} dodany przez {{comment.name}} {{comment.created}}
+            </p>
+            {{comment.body|linebreaks}}
+        </div>
+    {% empty %}
+        <p>Nie ma jeszcze żadnych komentarzy</p>
+    {% endfor %}
+    {% if new_comment %}
+        <h2>Twój komentarz został dodany</h2>
+    {% else %}
+        <form action='' method='POST'>
+            {% csrf_token %}
+            {{form.as_p}}
+            <input type='submit' value='Dodaj komentarz' />
+        </form>
+    {% endif %}
 {% endblock content %}

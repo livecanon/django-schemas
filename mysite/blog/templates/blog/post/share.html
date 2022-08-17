@@ -4,16 +4,16 @@
 
 {% block content %}
     {% if sent %}
-        <h1>Email was sent</h1>
+        <h1>Wiadomość email została wysłana.</h1>
         <p>
-            Sending post "{{post.title}}" to {{form.cleaned_data.to}} was successfull.
+            Wysyłanie posta"{{post.title}}" do {{form.cleaned_data.to}} zakończyło się pomyślnie.
         </p>
     {% else %}
-        <h1>Share "{{post.title}}" through email</h1>
+        <h1>Udostępnij "{{post.title}}" przez maila.</h1>
         <form action="" method="POST">
             {% csrf_token %}
             {{form.as_p}}
-            <input type='submit' value='send email' />
+            <input type='submit' value='Wyślij maila' />
         </form>
     {% endif %}
 {% endblock content %}
