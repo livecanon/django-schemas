@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.core.mail import send_mail
 from django.views.generic import ListView
 from django.conf import settings
+from django.db.models import Count
 
 from .forms import EmailPostForm, CommentForm
 from .models import Post
@@ -52,7 +53,18 @@ def post_detail(request, year, month, day, post):
     else:
         form = CommentForm()
 
-    context = {"post": post, "comments": comments, "form": form}
+    post_tags_ids = post.tags.values_list("id", flat=True)
+    similar_posts = Post.published.filter(tags__in=post_tags_ids).exclude(id=post.id)
+    similar_posts = similar_posts.annotate(same_tags=Count("tags")).order_by(
+        "-same_tags", "publish"
+    )[:4]
+
+    context = {
+        "post": post,
+        "comments": comments,
+        "form": form,
+        "similar_posts": similar_posts,
+    }
 
     return render(request, "blog/post/detail.html", context=context)
 
