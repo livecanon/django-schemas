@@ -5,13 +5,30 @@ from django.conf import settings
 
 from .forms import EmailPostForm, CommentForm
 from .models import Post
+from taggit.models import Tag
 
 
 class PostListView(ListView):
-    queryset = Post.published.all()
     context_object_name = "posts"
     paginate_by = 3
     template_name = "blog/post/list.html"
+
+    # get_queryset() doesn't take additional parameters as input.
+    # But you can use self.kwargs object to access URL parameters.
+    # Something like this: pk = self.kwargs['pk']
+    def get_queryset(self):
+        if self.kwargs.get("tag_slug"):
+            tag = get_object_or_404(Tag, slug=self.kwargs.get("tag_slug"))
+            # see https://docs.djangoproject.com/en/4.1/ref/models/querysets/#in
+            return Post.published.filter(tags__in=[tag])
+        else:
+            return Post.published.all()
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        if self.kwargs.get("tag_slug"):
+            context["tag"] = self.kwargs.get("tag_slug")
+        return context
 
 
 def post_detail(request, year, month, day, post):
