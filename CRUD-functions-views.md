@@ -3,6 +3,7 @@
 ### 1. Create
 
 > views.py
+
 ```
 def createProject(request):
     form = ProjectForm()
@@ -12,7 +13,7 @@ def createProject(request):
         if form.is_valid():
             form.save()
             return redirect('projects')
-    
+
     context = {
         'form': form
     }
@@ -20,11 +21,13 @@ def createProject(request):
 ```
 
 > urls.py
+
 ```
     path('create-project/', views.createProject, name='create-project'),
 ```
 
 > forms.py
+
 ```
 class ProjectForm(ModelForm):
     class Meta:
@@ -33,6 +36,7 @@ class ProjectForm(ModelForm):
 ```
 
 > HTML
+
 ```
 {% extends 'main.html' %}
 
@@ -49,11 +53,13 @@ class ProjectForm(ModelForm):
     </form>
 {% endblock content %}
 ```
+
 ---
 
 ### 2. Read
 
 > views
+
 ```
 def project(request, pk):
     project = Project.objects.get(id=pk)
@@ -67,11 +73,13 @@ def project(request, pk):
 ```
 
 > urls
+
 ```
     path('project/<str:pk>/', views.project, name='project'),
 ```
 
 > HTML
+
 ```
 {% extends 'main.html' %}
 
@@ -90,10 +98,13 @@ def project(request, pk):
 {% endblock content %}
 
 ```
+
 ---
-3. Update
+
+### 3. Update
 
 > views
+
 ```
 def updateProject(request, pk):
     project = Project.objects.get(id=pk)
@@ -105,7 +116,7 @@ def updateProject(request, pk):
         if form.is_valid():
             form.save()
             return redirect('projects')
-    
+
     context = {
         'form': form
     }
@@ -113,11 +124,13 @@ def updateProject(request, pk):
 ```
 
 > urls
+
 ```
     path('update-project/<str:pk>', views.updateProject, name='update-project'),
 ```
 
 > HTML (same as CREATE)
+
 ```
 {% extends 'main.html' %}
 
@@ -136,9 +149,11 @@ def updateProject(request, pk):
 ```
 
 ---
-4. Delete
+
+### 4. Delete
 
 > views
+
 ```
 def deleteProject(request, pk):
     project = Project.objects.get(id=pk)
@@ -152,11 +167,13 @@ def deleteProject(request, pk):
 ```
 
 > urls
+
 ```
     path('delete-project/<str:pk>', views.deleteProject, name='delete-project'),
 ```
 
 > HTML
+
 ```
 {% extends 'main.html' %}
 
