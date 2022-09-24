@@ -81,23 +81,13 @@ def hello_world(request):
 ## [Generic views](https://www.django-rest-framework.org/api-guide/generic-views/)
 
 The generic views provided by REST framework allow you to quickly build API views that map closely to your database models.
-If the generic views don't suit the needs of your API, you can drop down to using the regular APIView class, or reuse the mixins and base classes used by the generic views to compose your own set of reusable generic views.
+If the generic views don't suit the needs of your API, you can drop down to using the regular **APIView** class, or reuse the mixins and base classes used by the generic views to compose your own set of reusable generic views.
 
 [**GenericAPIView**](https://www.django-rest-framework.org/api-guide/generic-views/#genericapiview)
 
 This class extends REST framework's **APIView** class, adding commonly required behavior for standard list and detail views.
 
 Each of the concrete generic views provided is built by combining **GenericAPIView**, with one or more mixin classes.
-
-**Save and deletion hooks**:
-
-The following methods are provided by the mixin classes, and provide easy overriding of the object save or deletion behavior.
-
-`perform_create(self, serializer)` - Called by CreateModelMixin when saving a new object instance.
-`perform_update(self, serializer)` - Called by UpdateModelMixin when saving an existing object instance.
-`perform_destroy(self, instance)` - Called by DestroyModelMixin when deleting an object instance.
-
-These hooks are particularly useful for setting attributes that are implicit in the request, but are not part of the request data.
 
 **Mixins**:
 
@@ -117,4 +107,24 @@ If you're using generic views this is normally the level you'll be working at un
 
 The view classes can be imported from `rest_framework.generics`.
 
-### [**serializers**](https://www.django-rest-framework.org/api-guide/serializers/)
+- [CreateAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#createapiview)
+- [ListAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#listapiview)
+- [RetrieveAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#retrieveapiview)
+- [DestroyAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#destroyapiview)
+- [UpdateAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#updateapiview)
+- [ListCreateAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#listcreateapiview)
+- [RetrieveUpdateAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#retrieveupdateapiview)
+- [RetrieveDestroyAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#retrievedestroyapiview)
+- [RetrieveUpdateDestroyAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#retrieveupdatedestroyapiview)
+
+**Save and deletion hooks**:
+
+The following methods are provided by the mixin classes, and provide easy overriding of the object save or deletion behavior.
+
+`perform_create(self, serializer)` - Called by **CreateModelMixin** when saving a new object instance.
+`perform_update(self, serializer)` - Called by **UpdateModelMixin** when saving an existing object instance.
+`perform_destroy(self, instance)` - Called by **DestroyModelMixin** when deleting an object instance.
+
+These hooks are particularly useful for setting attributes that are implicit in the request, but are not part of the request data.
+
+## [**serializers**](https://www.django-rest-framework.org/api-guide/serializers/)
