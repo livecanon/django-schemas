@@ -100,3 +100,9 @@ The mixin classes can be imported from `rest_framework.mixins`.
 - [RetrieveModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#retrievemodelmixin)
 - [UpdateModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#updatemodelmixin)
 - [DestroyModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#destroymodelmixin)
+
+**Concrete View Classes**:
+
+If you're using generic views this is normally the level you'll be working at unless you need heavily customized behavior.
+
+The view classes can be imported from `rest_framework.generics`.
