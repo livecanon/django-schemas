@@ -30,7 +30,7 @@ Remember: _data_ has to be serialized
 
 ### [Views](https://www.django-rest-framework.org/api-guide/views/)
 
-REST framework provides an **APIView** class, which subclasses Django's **View** class.
+Using the [**APIView**](https://www.cdrf.co/3.13/rest_framework.views/APIView.html) class is pretty much the same as using a regular **View** class, as usual, the incoming request is dispatched to an appropriate handler method such as **.get()** or **.post()**
 
 _Example_
 
