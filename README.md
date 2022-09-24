@@ -89,6 +89,16 @@ This class extends REST framework's **APIView** class, adding commonly required 
 
 Each of the concrete generic views provided is built by combining **GenericAPIView**, with one or more mixin classes.
 
+**Save and deletion hooks**:
+
+The following methods are provided by the mixin classes, and provide easy overriding of the object save or deletion behavior.
+
+`perform_create(self, serializer)` - Called by CreateModelMixin when saving a new object instance.
+`perform_update(self, serializer)` - Called by UpdateModelMixin when saving an existing object instance.
+`perform_destroy(self, instance)` - Called by DestroyModelMixin when deleting an object instance.
+
+These hooks are particularly useful for setting attributes that are implicit in the request, but are not part of the request data.
+
 **Mixins**:
 
 The mixin classes provide the actions that are used to provide the basic view behavior. Note that the mixin classes provide action methods rather than defining the handler methods, such as **.get()** and **.post()**, directly. This allows for more flexible composition of behavior.
@@ -106,3 +116,5 @@ The mixin classes can be imported from `rest_framework.mixins`.
 If you're using generic views this is normally the level you'll be working at unless you need heavily customized behavior.
 
 The view classes can be imported from `rest_framework.generics`.
+
+### [**serializers**](https://www.django-rest-framework.org/api-guide/serializers/)
