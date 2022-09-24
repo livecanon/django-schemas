@@ -93,7 +93,7 @@ Each of the concrete generic views provided is built by combining **GenericAPIVi
 
 The mixin classes provide the actions that are used to provide the basic view behavior. Note that the mixin classes provide action methods rather than defining the handler methods, such as **.get()** and **.post()**, directly. This allows for more flexible composition of behavior.
 
-The mixin classes can be imported from rest_framework.mixins.
+The mixin classes can be imported from `rest_framework.mixins`.
 
 - [ListModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#listmodelmixin)
 - [CreateModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#createmodelmixin)
