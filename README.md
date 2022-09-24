@@ -1,4 +1,11 @@
-### [requests](https://www.django-rest-framework.org/api-guide/requests/)
+Content Table
+
+- [Requests](#requests)
+- [Responses](#responses)
+- [Views](#views)
+- [Generic Views](#generic-views)
+
+## [requests](https://www.django-rest-framework.org/api-guide/requests/)
 
 ```
     request.POST (django) ---> request.data (drf) (odpowiednik)
@@ -16,7 +23,7 @@
     request.content_type
 ```
 
-### [responses](https://www.django-rest-framework.org/api-guide/responses/)
+## [responses](https://www.django-rest-framework.org/api-guide/responses/)
 
 Unless you want to heavily customize REST framework for some reason, you should always use an **APIView** class or **@api_view** function for views that return **Response** objects.
 
@@ -28,7 +35,7 @@ _Signature_:
 
 Remember: _data_ has to be serialized
 
-### [Views](https://www.django-rest-framework.org/api-guide/views/)
+## [Views](https://www.django-rest-framework.org/api-guide/views/)
 
 Using the [**APIView**](https://www.cdrf.co/3.13/rest_framework.views/APIView.html) class is pretty much the same as using a regular **View** class, as usual, the incoming request is dispatched to an appropriate handler method such as **.get()** or **.post()**
 
@@ -70,3 +77,26 @@ from rest_framework.response import Response
 def hello_world(request):
     return Response({"message": "Hello, world!"})
 ```
+
+## [Generic views](https://www.django-rest-framework.org/api-guide/generic-views/)
+
+The generic views provided by REST framework allow you to quickly build API views that map closely to your database models.
+If the generic views don't suit the needs of your API, you can drop down to using the regular APIView class, or reuse the mixins and base classes used by the generic views to compose your own set of reusable generic views.
+
+[**GenericAPIView**](https://www.django-rest-framework.org/api-guide/generic-views/#genericapiview)
+
+This class extends REST framework's **APIView** class, adding commonly required behavior for standard list and detail views.
+
+Each of the concrete generic views provided is built by combining **GenericAPIView**, with one or more mixin classes.
+
+**Mixins**:
+
+The mixin classes provide the actions that are used to provide the basic view behavior. Note that the mixin classes provide action methods rather than defining the handler methods, such as **.get()** and **.post()**, directly. This allows for more flexible composition of behavior.
+
+The mixin classes can be imported from rest_framework.mixins.
+
+- [ListModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#listmodelmixin)
+- [CreateModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#createmodelmixin)
+- [RetrieveModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#retrievemodelmixin)
+- [UpdateModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#updatemodelmixin)
+- [DestroyModelMixin](https://www.django-rest-framework.org/api-guide/generic-views/#destroymodelmixin)
