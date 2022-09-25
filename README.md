@@ -133,3 +133,36 @@ These hooks are particularly useful for setting attributes that are implicit in 
 Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
 
 We provide a **Serializer** class which gives you a powerful, generic way to control the output of your responses, as well as a **ModelSerializer** class which provides a useful shortcut for creating serializers that deal with model instances and querysets.
+
+[**serializers.Serializer**](https://www.cdrf.co/3.13/rest_framework.serializers/Serializer.html)
+
+_see_ `products/serializers/MockSerializer`
+
+Validation:
+
+When deserializing data (json -> python), you always need to call **is_valid()** before attempting to access the validated data, or save an object instance. The **.is_valid()** method takes an optional **raise_exception** flag that will cause it to raise a **serializers.ValidationError** exception if there are validation errors.
+
+```
+# Return a 400 response if the data was invalid.
+serializer.is_valid(raise_exception=True)
+```
+
+- [Field level validation](https://www.django-rest-framework.org/api-guide/serializers/#field-level-validation)
+- [Object level validation](https://www.django-rest-framework.org/api-guide/serializers/#object-level-validation)
+
+[**serializers.ModelSerializer**](https://www.cdrf.co/3.13/rest_framework.serializers/ModelSerializer.html)
+
+A **ModelSerializer** is just a regular **Serializer**, except that:
+
+- A set of default fields are automatically populated.
+- A set of default validators are automatically populated.
+- Default `.create()` and `.update()` implementations are provided.
+
+Declaring a **ModelSerializer** looks like this:
+
+```
+class AccountSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Account
+        fields = ['id', 'account_name', 'users', 'created']
+```
