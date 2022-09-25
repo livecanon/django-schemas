@@ -4,6 +4,7 @@ Content Table
 - [Responses](#responses)
 - [Views](#views)
 - [Generic Views](#generic-views)
+- [Serializers](#serializers)
 
 ## [requests](https://www.django-rest-framework.org/api-guide/requests/)
 
@@ -128,3 +129,7 @@ The following methods are provided by the mixin classes, and provide easy overri
 These hooks are particularly useful for setting attributes that are implicit in the request, but are not part of the request data.
 
 ## [**serializers**](https://www.django-rest-framework.org/api-guide/serializers/)
+
+Serializers allow complex data such as querysets and model instances to be converted to native Python datatypes that can then be easily rendered into JSON, XML or other content types. Serializers also provide deserialization, allowing parsed data to be converted back into complex types, after first validating the incoming data.
+
+We provide a **Serializer** class which gives you a powerful, generic way to control the output of your responses, as well as a **ModelSerializer** class which provides a useful shortcut for creating serializers that deal with model instances and querysets.
