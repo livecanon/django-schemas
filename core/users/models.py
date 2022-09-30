@@ -8,7 +8,7 @@ from django.contrib.auth.models import (
 )
 
 
-class CustomAccountManager(BaseUserManager):
+class UserManager(BaseUserManager):
     def create_superuser(self, email, password, **extra_fields):
 
         extra_fields.setdefault("is_staff", True)
@@ -34,7 +34,7 @@ class CustomAccountManager(BaseUserManager):
         return user
 
 
-class CustomUser(AbstractBaseUser, PermissionsMixin):
+class User(AbstractBaseUser, PermissionsMixin):
 
     email = models.EmailField(_("email address"), unique=True)
     first_name = models.CharField(max_length=150, blank=False)
@@ -54,7 +54,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
         ),
     )
 
-    objects = CustomAccountManager()
+    objects = UserManager()
 
     USERNAME_FIELD = "email"
     # A list of the field names that will be prompted for when creating

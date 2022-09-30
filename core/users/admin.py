@@ -1,12 +1,12 @@
 from django.contrib import admin
-from users.models import CustomUser
+from users.models import User
 from django.contrib.auth.admin import UserAdmin
 from django.forms import Textarea
 from django.db import models
 
 
 class UserAdminConfig(UserAdmin):
-    model = CustomUser
+    model = User
     search_fields = (
         "email",
         "first_name",
@@ -51,4 +51,4 @@ class UserAdminConfig(UserAdmin):
     )
 
 
-admin.site.register(CustomUser, UserAdminConfig)
+admin.site.register(User, UserAdminConfig)
