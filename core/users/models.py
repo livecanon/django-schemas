@@ -49,6 +49,13 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     objects = CustomAccountManager()
 
     USERNAME_FIELD = "email"
+    # A list of the field names that will be prompted for when creating
+    # a user via the createsuperuser management command.
+    # The user will be prompted to supply a value for each of these fields.
+    # It must include any field for which blank is False or undefined and
+    # may include additional fields you want prompted for when a user
+    # is created interactively. REQUIRED_FIELDS has no effect in other parts of Django,
+    # like creating a user in the admin.
     REQUIRED_FIELDS = ["user_name", "first_name"]
 
     def __str__(self):
