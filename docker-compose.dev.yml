@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres
+    container_name: rickandmorty-db
+    volumes:
+      - pg_db:/var/lib/postgresql/data
+    env_file:
+      - ./config/dev/.env
+  api:
+    build:
+      context: .
+      dockerfile: ./config/dev/Dockerfile.api
+    container_name: rickandmorty-api
+    ports:
+      - "8000:8000"
+    env_file:
+      - ./config/dev/.env
+    depends_on:
+      - db
+    volumes:
+      - ./core/.:/var/www/server/core
+      - static_data:/vol/static_data
+
+volumes:
+  pg_db:
+  static_data:

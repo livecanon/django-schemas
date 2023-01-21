@@ -1,0 +1,25 @@
+FROM python:3.9
+
+
+# Instead of copying the whole project, which we do eventually later, 
+# we are only copying requirements.txt. Then we are installing all the libraries 
+# mentioned in it. This is done so because Docker works on the principle of layers. 
+# If there is any change in a layer, all the subsequence layers will be re-processed. 
+# Hence, copying only requirements.txt ensures that installation is reused across 
+# docker builds. This layer is dropped if there is a change in the requirements.txt 
+# file itself. 
+COPY requirements.txt tmp/
+COPY requirements-dev.txt tmp/
+RUN pip install -r tmp/requirements-dev.txt
+
+WORKDIR /var/www/server
+
+COPY . .
+
+EXPOSE 8000
+
+# We need this to copy resources into a volume so that we can use loaddata command
+RUN mkdir -p /vol/static_data/media
+
+RUN chmod +x /var/www/server/config/dev/entrypoint.sh
+CMD /var/www/server/config/dev/entrypoint.sh

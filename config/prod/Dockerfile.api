@@ -1,0 +1,19 @@
+FROM python:3.9
+
+RUN mkdir -p /vol/static_data/media
+RUN mkdir -p /vol/static_data/static
+RUN chmod -R 755 /vol/static_data
+
+WORKDIR /var/www/server
+
+COPY requirements.txt .
+COPY requirements-prod.txt .
+RUN pip install -r requirements-prod.txt
+RUN rm requirements.txt
+RUN rm requirements-prod.txt
+
+COPY ./config/prod/entrypoint.sh .
+COPY ./core /var/www/server/core
+
+RUN chmod +x /var/www/server/entrypoint.sh
+CMD /var/www/server/entrypoint.sh

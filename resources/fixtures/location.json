@@ -1,0 +1,1357 @@
+[
+  {
+    "fields": {
+      "name": "Earth (C-137)",
+      "type": "Planet",
+      "dimension": "Dimension C-137",
+      "createdAt": "2022-10-15T12:21:34.536307+00:00",
+      "editedAt": "2022-10-15T12:21:34.536371+00:00"
+    },
+    "pk": 1,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Abadango",
+      "type": "Cluster",
+      "createdAt": "2022-10-15T12:21:34.703508+00:00",
+      "editedAt": "2022-10-15T12:21:34.703533+00:00"
+    },
+    "pk": 2,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Citadel of Ricks",
+      "type": "Space station",
+      "createdAt": "2022-10-15T12:21:34.870662+00:00",
+      "editedAt": "2022-10-15T12:21:34.870687+00:00"
+    },
+    "pk": 3,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Worldender's lair",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:35.039917+00:00",
+      "editedAt": "2022-10-15T12:21:35.039943+00:00"
+    },
+    "pk": 4,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Anatomy Park",
+      "type": "Microverse",
+      "dimension": "Dimension C-137",
+      "createdAt": "2022-10-15T12:21:35.190583+00:00",
+      "editedAt": "2022-10-15T12:21:35.190594+00:00"
+    },
+    "pk": 5,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Interdimensional Cable",
+      "type": "TV",
+      "createdAt": "2022-10-15T12:21:35.381302+00:00",
+      "editedAt": "2022-10-15T12:21:35.381330+00:00"
+    },
+    "pk": 6,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Immortality Field Resort",
+      "type": "Resort",
+      "createdAt": "2022-10-15T12:21:35.583823+00:00",
+      "editedAt": "2022-10-15T12:21:35.583848+00:00"
+    },
+    "pk": 7,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Post-Apocalyptic Earth",
+      "type": "Planet",
+      "dimension": "Post-Apocalyptic Dimension",
+      "createdAt": "2022-10-15T12:21:35.784743+00:00",
+      "editedAt": "2022-10-15T12:21:35.784769+00:00"
+    },
+    "pk": 8,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Purge Planet",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:36.045002+00:00",
+      "editedAt": "2022-10-15T12:21:36.045028+00:00"
+    },
+    "pk": 9,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Venzenulon 7",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:36.267887+00:00",
+      "editedAt": "2022-10-15T12:21:36.267911+00:00"
+    },
+    "pk": 10,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Bepis 9",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:36.478200+00:00",
+      "editedAt": "2022-10-15T12:21:36.478228+00:00"
+    },
+    "pk": 11,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Cronenberg Earth",
+      "type": "Planet",
+      "dimension": "Cronenberg Dimension",
+      "createdAt": "2022-10-15T12:21:36.653866+00:00",
+      "editedAt": "2022-10-15T12:21:36.653890+00:00"
+    },
+    "pk": 12,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Nuptia 4",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:36.830930+00:00",
+      "editedAt": "2022-10-15T12:21:36.830957+00:00"
+    },
+    "pk": 13,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Giant's Town",
+      "type": "Fantasy town",
+      "dimension": "Fantasy Dimension",
+      "createdAt": "2022-10-15T12:21:37.002722+00:00",
+      "editedAt": "2022-10-15T12:21:37.002747+00:00"
+    },
+    "pk": 14,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Bird World",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:37.176348+00:00",
+      "editedAt": "2022-10-15T12:21:37.176374+00:00"
+    },
+    "pk": 15,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "St. Gloopy Noops Hospital",
+      "type": "Space station",
+      "createdAt": "2022-10-15T12:21:37.340889+00:00",
+      "editedAt": "2022-10-15T12:21:37.340939+00:00"
+    },
+    "pk": 16,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (5-126)",
+      "type": "Planet",
+      "dimension": "Dimension 5-126",
+      "createdAt": "2022-10-15T12:21:37.509950+00:00",
+      "editedAt": "2022-10-15T12:21:37.509976+00:00"
+    },
+    "pk": 17,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Mr. Goldenfold's dream",
+      "type": "Dream",
+      "dimension": "Dimension C-137",
+      "createdAt": "2022-10-15T12:21:37.686517+00:00",
+      "editedAt": "2022-10-15T12:21:37.686542+00:00"
+    },
+    "pk": 18,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Gromflom Prime",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:37.889511+00:00",
+      "editedAt": "2022-10-15T12:21:37.889537+00:00"
+    },
+    "pk": 19,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Replacement Dimension)",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:38.150667+00:00",
+      "editedAt": "2022-10-15T12:21:38.150691+00:00"
+    },
+    "pk": 20,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Testicle Monster Dimension",
+      "type": "Dimension",
+      "dimension": "Testicle Monster Dimension",
+      "createdAt": "2022-10-15T12:21:38.343416+00:00",
+      "editedAt": "2022-10-15T12:21:38.343442+00:00"
+    },
+    "pk": 21,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Signus 5 Expanse",
+      "type": "unknown",
+      "dimension": "Cromulon Dimension",
+      "createdAt": "2022-10-15T12:21:38.533993+00:00",
+      "editedAt": "2022-10-15T12:21:38.534016+00:00"
+    },
+    "pk": 22,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (C-500A)",
+      "type": "Planet",
+      "dimension": "Dimension C-500A",
+      "createdAt": "2022-10-15T12:21:38.726544+00:00",
+      "editedAt": "2022-10-15T12:21:38.726582+00:00"
+    },
+    "pk": 23,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Rick's Battery Microverse",
+      "type": "Microverse",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:38.908495+00:00",
+      "editedAt": "2022-10-15T12:21:38.908519+00:00"
+    },
+    "pk": 24,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "The Menagerie",
+      "type": "Menagerie",
+      "createdAt": "2022-10-15T12:21:39.120684+00:00",
+      "editedAt": "2022-10-15T12:21:39.120708+00:00"
+    },
+    "pk": 25,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (K-83)",
+      "type": "Planet",
+      "dimension": "Dimension K-83",
+      "createdAt": "2022-10-15T12:21:39.300252+00:00",
+      "editedAt": "2022-10-15T12:21:39.300277+00:00"
+    },
+    "pk": 26,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Hideout Planet",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:39.488430+00:00",
+      "editedAt": "2022-10-15T12:21:39.488455+00:00"
+    },
+    "pk": 27,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Unity's Planet",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:39.692387+00:00",
+      "editedAt": "2022-10-15T12:21:39.692411+00:00"
+    },
+    "pk": 28,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Dorian 5",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:39.850783+00:00",
+      "editedAt": "2022-10-15T12:21:39.850796+00:00"
+    },
+    "pk": 29,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Unknown dimension)",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:40.008199+00:00",
+      "editedAt": "2022-10-15T12:21:40.008225+00:00"
+    },
+    "pk": 30,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (J19\u03b67)",
+      "type": "Planet",
+      "dimension": "Dimension J19\u03b67",
+      "createdAt": "2022-10-15T12:21:40.171993+00:00",
+      "editedAt": "2022-10-15T12:21:40.172017+00:00"
+    },
+    "pk": 31,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Roy: A Life Well Lived",
+      "type": "Game",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:40.339280+00:00",
+      "editedAt": "2022-10-15T12:21:40.339304+00:00"
+    },
+    "pk": 32,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Eric Stoltz Mask Earth",
+      "type": "Planet",
+      "dimension": "Eric Stoltz Mask Dimension",
+      "createdAt": "2022-10-15T12:21:40.501898+00:00",
+      "editedAt": "2022-10-15T12:21:40.501923+00:00"
+    },
+    "pk": 33,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Evil Rick's Target Dimension)",
+      "type": "Planet",
+      "dimension": "Evil Rick's Target Dimension",
+      "createdAt": "2022-10-15T12:21:40.673615+00:00",
+      "editedAt": "2022-10-15T12:21:40.673640+00:00"
+    },
+    "pk": 34,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Planet Squanch",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:40.833550+00:00",
+      "editedAt": "2022-10-15T12:21:40.833576+00:00"
+    },
+    "pk": 35,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Glaagablaaga",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:41.005642+00:00",
+      "editedAt": "2022-10-15T12:21:41.005663+00:00"
+    },
+    "pk": 36,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Resort Planet",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:41.168486+00:00",
+      "editedAt": "2022-10-15T12:21:41.168514+00:00"
+    },
+    "pk": 37,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Interdimensional Customs",
+      "type": "Customs",
+      "createdAt": "2022-10-15T12:21:41.325603+00:00",
+      "editedAt": "2022-10-15T12:21:41.325627+00:00"
+    },
+    "pk": 38,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Galactic Federation Prison",
+      "type": "Space station",
+      "createdAt": "2022-10-15T12:21:41.494183+00:00",
+      "editedAt": "2022-10-15T12:21:41.494208+00:00"
+    },
+    "pk": 39,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Gazorpazorp",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:41.664373+00:00",
+      "editedAt": "2022-10-15T12:21:41.664399+00:00"
+    },
+    "pk": 40,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Hamster in Butt World",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:41.854443+00:00",
+      "editedAt": "2022-10-15T12:21:41.854468+00:00"
+    },
+    "pk": 41,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Giant Telepathic Spiders Dimension)",
+      "type": "Planet",
+      "dimension": "Giant Telepathic Spiders Dimension",
+      "createdAt": "2022-10-15T12:21:42.020629+00:00",
+      "editedAt": "2022-10-15T12:21:42.020653+00:00"
+    },
+    "pk": 42,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Alphabetrium",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:42.185899+00:00",
+      "editedAt": "2022-10-15T12:21:42.185924+00:00"
+    },
+    "pk": 43,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Jerryboree",
+      "type": "Daycare",
+      "createdAt": "2022-10-15T12:21:42.355673+00:00",
+      "editedAt": "2022-10-15T12:21:42.355698+00:00"
+    },
+    "pk": 44,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Krootabulon",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:42.519627+00:00",
+      "editedAt": "2022-10-15T12:21:42.519652+00:00"
+    },
+    "pk": 45,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Zigerion's Base",
+      "type": "Space station",
+      "dimension": "Dimension C-137",
+      "createdAt": "2022-10-15T12:21:42.683889+00:00",
+      "editedAt": "2022-10-15T12:21:42.683915+00:00"
+    },
+    "pk": 46,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Pluto",
+      "type": "Dwarf planet (Celestial Dwarf)",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:42.865320+00:00",
+      "editedAt": "2022-10-15T12:21:42.865345+00:00"
+    },
+    "pk": 47,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Fantasy World",
+      "type": "Planet",
+      "dimension": "Fantasy Dimension",
+      "createdAt": "2022-10-15T12:21:43.027594+00:00",
+      "editedAt": "2022-10-15T12:21:43.027617+00:00"
+    },
+    "pk": 48,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Zeep Xanflorp's Miniverse",
+      "type": "Miniverse",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:43.192550+00:00",
+      "editedAt": "2022-10-15T12:21:43.192575+00:00"
+    },
+    "pk": 49,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Kyle's Teenyverse",
+      "type": "Teenyverse",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:43.362081+00:00",
+      "editedAt": "2022-10-15T12:21:43.362107+00:00"
+    },
+    "pk": 50,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Larva Alien's Planet",
+      "type": "Planet",
+      "dimension": "Unknown dimension",
+      "createdAt": "2022-10-15T12:21:43.537898+00:00",
+      "editedAt": "2022-10-15T12:21:43.537923+00:00"
+    },
+    "pk": 51,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (K-22)",
+      "type": "Planet",
+      "dimension": "Dimension K-22",
+      "createdAt": "2022-10-15T12:21:43.708339+00:00",
+      "editedAt": "2022-10-15T12:21:43.708365+00:00"
+    },
+    "pk": 52,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Mr. Meeseeks Box",
+      "type": "Box",
+      "createdAt": "2022-10-15T12:21:43.890911+00:00",
+      "editedAt": "2022-10-15T12:21:43.890935+00:00"
+    },
+    "pk": 53,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Vindicator's Base",
+      "type": "Spacecraft",
+      "createdAt": "2022-10-15T12:21:44.080170+00:00",
+      "editedAt": "2022-10-15T12:21:44.080194+00:00"
+    },
+    "pk": 54,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Pawn Shop Planet",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:44.258711+00:00",
+      "editedAt": "2022-10-15T12:21:44.258738+00:00"
+    },
+    "pk": 55,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Mega Gargantuan Kingdom",
+      "type": "Microverse",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:44.469985+00:00",
+      "editedAt": "2022-10-15T12:21:44.470009+00:00"
+    },
+    "pk": 56,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Gear World",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:44.674922+00:00",
+      "editedAt": "2022-10-15T12:21:44.674947+00:00"
+    },
+    "pk": 57,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (D-99)",
+      "type": "Planet",
+      "dimension": "Dimension D-99",
+      "createdAt": "2022-10-15T12:21:44.857321+00:00",
+      "editedAt": "2022-10-15T12:21:44.857336+00:00"
+    },
+    "pk": 58,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (D716)",
+      "type": "Planet",
+      "dimension": "Dimension D716",
+      "createdAt": "2022-10-15T12:21:45.029206+00:00",
+      "editedAt": "2022-10-15T12:21:45.029231+00:00"
+    },
+    "pk": 59,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (D716-B)",
+      "type": "Planet",
+      "dimension": "Dimension D716-B",
+      "createdAt": "2022-10-15T12:21:45.195628+00:00",
+      "editedAt": "2022-10-15T12:21:45.195652+00:00"
+    },
+    "pk": 60,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (D716-C)",
+      "type": "Planet",
+      "dimension": "Dimension D716-C",
+      "createdAt": "2022-10-15T12:21:45.392611+00:00",
+      "editedAt": "2022-10-15T12:21:45.392637+00:00"
+    },
+    "pk": 61,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (J-22)",
+      "type": "Planet",
+      "dimension": "Dimension J-22",
+      "createdAt": "2022-10-15T12:21:45.582102+00:00",
+      "editedAt": "2022-10-15T12:21:45.582128+00:00"
+    },
+    "pk": 62,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Froopyland",
+      "type": "Artificially generated world",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:45.853589+00:00",
+      "editedAt": "2022-10-15T12:21:45.853614+00:00"
+    },
+    "pk": 63,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Detoxifier",
+      "type": "Machine",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:46.023565+00:00",
+      "editedAt": "2022-10-15T12:21:46.023590+00:00"
+    },
+    "pk": 64,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Trunk World",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:46.194099+00:00",
+      "editedAt": "2022-10-15T12:21:46.194124+00:00"
+    },
+    "pk": 65,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Plopstar",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:46.373596+00:00",
+      "editedAt": "2022-10-15T12:21:46.373621+00:00"
+    },
+    "pk": 66,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Blips and Chitz",
+      "type": "Arcade",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:46.545924+00:00",
+      "editedAt": "2022-10-15T12:21:46.545949+00:00"
+    },
+    "pk": 67,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Girvonesk",
+      "type": "unknown",
+      "createdAt": "2022-10-15T12:21:46.711642+00:00",
+      "editedAt": "2022-10-15T12:21:46.711666+00:00"
+    },
+    "pk": 68,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (C-35)",
+      "type": "Planet",
+      "dimension": "Dimension C-35",
+      "createdAt": "2022-10-15T12:21:46.881750+00:00",
+      "editedAt": "2022-10-15T12:21:46.881775+00:00"
+    },
+    "pk": 69,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Snuffles' Dream",
+      "type": "Dream",
+      "dimension": "Dimension C-137",
+      "createdAt": "2022-10-15T12:21:47.043864+00:00",
+      "editedAt": "2022-10-15T12:21:47.043889+00:00"
+    },
+    "pk": 70,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Pizza Dimension)",
+      "type": "Planet",
+      "dimension": "Pizza Dimension",
+      "createdAt": "2022-10-15T12:21:47.205645+00:00",
+      "editedAt": "2022-10-15T12:21:47.205670+00:00"
+    },
+    "pk": 71,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Phone Dimension)",
+      "type": "Planet",
+      "dimension": "Phone Dimension",
+      "createdAt": "2022-10-15T12:21:47.401250+00:00",
+      "editedAt": "2022-10-15T12:21:47.401268+00:00"
+    },
+    "pk": 72,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Greasy Grandma World",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:47.650697+00:00",
+      "editedAt": "2022-10-15T12:21:47.650723+00:00"
+    },
+    "pk": 73,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Chair Dimension)",
+      "type": "Planet",
+      "dimension": "Chair Dimension",
+      "createdAt": "2022-10-15T12:21:47.833285+00:00",
+      "editedAt": "2022-10-15T12:21:47.833310+00:00"
+    },
+    "pk": 74,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "\u00c1rboles Mentirosos",
+      "type": "Planet",
+      "createdAt": "2022-10-15T12:21:48.030273+00:00",
+      "editedAt": "2022-10-15T12:21:48.030288+00:00"
+    },
+    "pk": 75,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Alien Day Spa",
+      "type": "Spa",
+      "createdAt": "2022-10-15T12:21:48.218222+00:00",
+      "editedAt": "2022-10-15T12:21:48.218246+00:00"
+    },
+    "pk": 76,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Fascist Dimension)",
+      "type": "Planet",
+      "dimension": "Fascist Dimension",
+      "createdAt": "2022-10-15T12:21:48.382286+00:00",
+      "editedAt": "2022-10-15T12:21:48.382311+00:00"
+    },
+    "pk": 77,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Snake Planet",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:48.544894+00:00",
+      "editedAt": "2022-10-15T12:21:48.544920+00:00"
+    },
+    "pk": 78,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Forbodulon Prime",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:48.711248+00:00",
+      "editedAt": "2022-10-15T12:21:48.711273+00:00"
+    },
+    "pk": 79,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Fascist Shrimp Dimension)",
+      "type": "Planet",
+      "dimension": "Fascist Shrimp Dimension",
+      "createdAt": "2022-10-15T12:21:48.872182+00:00",
+      "editedAt": "2022-10-15T12:21:48.872207+00:00"
+    },
+    "pk": 80,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Fascist Teddy Bear Dimension)",
+      "type": "Planet",
+      "dimension": "Fascist Teddy Bear Dimension",
+      "createdAt": "2022-10-15T12:21:49.036494+00:00",
+      "editedAt": "2022-10-15T12:21:49.036519+00:00"
+    },
+    "pk": 81,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Wasp Dimension)",
+      "type": "Planet",
+      "dimension": "Wasp Dimension",
+      "createdAt": "2022-10-15T12:21:49.204055+00:00",
+      "editedAt": "2022-10-15T12:21:49.204080+00:00"
+    },
+    "pk": 82,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Monogatron Mothership",
+      "type": "Space station",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:49.372725+00:00",
+      "editedAt": "2022-10-15T12:21:49.372750+00:00"
+    },
+    "pk": 83,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Gorgon Quadrant",
+      "type": "Quadrant",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:49.542844+00:00",
+      "editedAt": "2022-10-15T12:21:49.542869+00:00"
+    },
+    "pk": 84,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Midland Quasar",
+      "type": "Quasar",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:49.714321+00:00",
+      "editedAt": "2022-10-15T12:21:49.714346+00:00"
+    },
+    "pk": 85,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Mount Space Everest",
+      "type": "Mount",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:49.891017+00:00",
+      "editedAt": "2022-10-15T12:21:49.891038+00:00"
+    },
+    "pk": 86,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Globaflyn",
+      "type": "Liquid",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:50.068113+00:00",
+      "editedAt": "2022-10-15T12:21:50.068137+00:00"
+    },
+    "pk": 87,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Heist-Con",
+      "type": "Convention",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:50.254822+00:00",
+      "editedAt": "2022-10-15T12:21:50.254849+00:00"
+    },
+    "pk": 88,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Heistotron Base",
+      "type": "Space station",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:50.419019+00:00",
+      "editedAt": "2022-10-15T12:21:50.419044+00:00"
+    },
+    "pk": 89,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Mount Olympus",
+      "type": "Mount",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:50.586806+00:00",
+      "editedAt": "2022-10-15T12:21:50.586825+00:00"
+    },
+    "pk": 90,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Plitzville Montana",
+      "type": "Woods",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:50.756932+00:00",
+      "editedAt": "2022-10-15T12:21:50.756960+00:00"
+    },
+    "pk": 91,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Earth (Tusk Dimension)",
+      "type": "Planet",
+      "dimension": "Tusk Dimension",
+      "createdAt": "2022-10-15T12:21:50.925334+00:00",
+      "editedAt": "2022-10-15T12:21:50.925358+00:00"
+    },
+    "pk": 92,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Gramuflack",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:51.098018+00:00",
+      "editedAt": "2022-10-15T12:21:51.098042+00:00"
+    },
+    "pk": 93,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Draygon",
+      "type": "Planet",
+      "dimension": "Magic Dimension",
+      "createdAt": "2022-10-15T12:21:51.259945+00:00",
+      "editedAt": "2022-10-15T12:21:51.259971+00:00"
+    },
+    "pk": 94,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "New Improved Galactic Federation Quarters",
+      "type": "Space station",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:51.425731+00:00",
+      "editedAt": "2022-10-15T12:21:51.425757+00:00"
+    },
+    "pk": 95,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Story Train",
+      "type": "Diegesis",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:51.591213+00:00",
+      "editedAt": "2022-10-15T12:21:51.591237+00:00"
+    },
+    "pk": 96,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Non-Diegetic Alternative Reality",
+      "type": "Non-Diegetic Alternative Reality",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:51.750549+00:00",
+      "editedAt": "2022-10-15T12:21:51.750574+00:00"
+    },
+    "pk": 97,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Tickets Please Guy Nightmare",
+      "type": "Nightmare",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:51.909760+00:00",
+      "editedAt": "2022-10-15T12:21:51.909785+00:00"
+    },
+    "pk": 98,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Morty\u2019s Story",
+      "type": "Diegesis",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:52.076783+00:00",
+      "editedAt": "2022-10-15T12:21:52.076808+00:00"
+    },
+    "pk": 99,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Ricks\u2019s Story",
+      "type": "Diegesis",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:52.241934+00:00",
+      "editedAt": "2022-10-15T12:21:52.241959+00:00"
+    },
+    "pk": 100,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Glorzo Asteroid",
+      "type": "Asteroid",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:52.401512+00:00",
+      "editedAt": "2022-10-15T12:21:52.401537+00:00"
+    },
+    "pk": 101,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Alien Acid Plant",
+      "type": "Acid Plant",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:52.574279+00:00",
+      "editedAt": "2022-10-15T12:21:52.574304+00:00"
+    },
+    "pk": 102,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Merged Universe",
+      "type": "Dimension",
+      "dimension": "Merged Dimension",
+      "createdAt": "2022-10-15T12:21:52.746041+00:00",
+      "editedAt": "2022-10-15T12:21:52.746066+00:00"
+    },
+    "pk": 103,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Near-Duplicate Reality",
+      "type": "Reality",
+      "dimension": "Unknown dimension",
+      "createdAt": "2022-10-15T12:21:52.910012+00:00",
+      "editedAt": "2022-10-15T12:21:52.910031+00:00"
+    },
+    "pk": 104,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "NX-5 Planet Remover",
+      "type": "Death Star",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:53.066783+00:00",
+      "editedAt": "2022-10-15T12:21:53.066810+00:00"
+    },
+    "pk": 105,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Gaia",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:53.230434+00:00",
+      "editedAt": "2022-10-15T12:21:53.230459+00:00"
+    },
+    "pk": 106,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Defiance's Ship",
+      "type": "Spacecraft",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:53.407389+00:00",
+      "editedAt": "2022-10-15T12:21:53.407406+00:00"
+    },
+    "pk": 107,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Defiance's Base",
+      "type": "Base",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:53.603216+00:00",
+      "editedAt": "2022-10-15T12:21:53.603242+00:00"
+    },
+    "pk": 108,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "The Ocean",
+      "type": "Liquid",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:53.803685+00:00",
+      "editedAt": "2022-10-15T12:21:53.803709+00:00"
+    },
+    "pk": 109,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Narnia Dimension",
+      "type": "Dimension",
+      "dimension": "Fantasy Dimension",
+      "createdAt": "2022-10-15T12:21:54.014669+00:00",
+      "editedAt": "2022-10-15T12:21:54.014695+00:00"
+    },
+    "pk": 110,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Elemental Rings",
+      "type": "Elemental Rings",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:54.196082+00:00",
+      "editedAt": "2022-10-15T12:21:54.196107+00:00"
+    },
+    "pk": 111,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Morglutz",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:54.389857+00:00",
+      "editedAt": "2022-10-15T12:21:54.389882+00:00"
+    },
+    "pk": 112,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Ferkus 9",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:54.559981+00:00",
+      "editedAt": "2022-10-15T12:21:54.560006+00:00"
+    },
+    "pk": 113,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Morty",
+      "type": "Human",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:54.735045+00:00",
+      "editedAt": "2022-10-15T12:21:54.735070+00:00"
+    },
+    "pk": 114,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Space",
+      "type": "Space",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:54.902917+00:00",
+      "editedAt": "2022-10-15T12:21:54.902941+00:00"
+    },
+    "pk": 115,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Hell",
+      "type": "Hell",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:55.070288+00:00",
+      "editedAt": "2022-10-15T12:21:55.070311+00:00"
+    },
+    "pk": 116,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Z. Q. P. D.",
+      "type": "Police Department",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:55.238020+00:00",
+      "editedAt": "2022-10-15T12:21:55.238046+00:00"
+    },
+    "pk": 117,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Space Tahoe",
+      "type": "unknown",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:55.395021+00:00",
+      "editedAt": "2022-10-15T12:21:55.395045+00:00"
+    },
+    "pk": 118,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "France",
+      "type": "Country",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:55.550613+00:00",
+      "editedAt": "2022-10-15T12:21:55.550637+00:00"
+    },
+    "pk": 119,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Birdperson's Consciousness",
+      "type": "Consciousness",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:55.721940+00:00",
+      "editedAt": "2022-10-15T12:21:55.721965+00:00"
+    },
+    "pk": 120,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Rick's Consciousness",
+      "type": "Consciousness",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:55.942919+00:00",
+      "editedAt": "2022-10-15T12:21:55.942939+00:00"
+    },
+    "pk": 121,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Avian Planet",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:56.191398+00:00",
+      "editedAt": "2022-10-15T12:21:56.191422+00:00"
+    },
+    "pk": 122,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Normal Size Bug Dimension",
+      "type": "Dimension",
+      "createdAt": "2022-10-15T12:21:56.392543+00:00",
+      "editedAt": "2022-10-15T12:21:56.392562+00:00"
+    },
+    "pk": 123,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Slartivart",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:56.613327+00:00",
+      "editedAt": "2022-10-15T12:21:56.613352+00:00"
+    },
+    "pk": 124,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Rick and Two Crows Planet",
+      "type": "Planet",
+      "dimension": "Replacement Dimension",
+      "createdAt": "2022-10-15T12:21:56.816924+00:00",
+      "editedAt": "2022-10-15T12:21:56.816949+00:00"
+    },
+    "pk": 125,
+    "model": "api.location"
+  },
+  {
+    "fields": {
+      "name": "Rick's Memories",
+      "type": "Memory",
+      "createdAt": "2022-10-15T12:21:57.012336+00:00",
+      "editedAt": "2022-10-15T12:21:57.012362+00:00"
+    },
+    "pk": 126,
+    "model": "api.location"
+  }
+]

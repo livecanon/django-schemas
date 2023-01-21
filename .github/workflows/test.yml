@@ -1,0 +1,38 @@
+# see https://www.hacksoft.io/blog/github-actions-in-action-setting-up-django-and-postgres
+name: Test
+
+on: [push]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:latest
+        env:
+          POSTGRES_USER: ${{ secrets.TEST_PG_USER }}
+          POSTGRES_PASSWORD: ${{ secrets.TEST_PG_PASSWORD }}
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready 
+          --health-interval 10s 
+          --health-timeout 5s 
+          --health-retries 5
+    env:
+      working-directory: "core"
+      TEST_PG_USER: ${{ secrets.TEST_PG_USER }}
+      TEST_PG_PASSWORD: ${{ secrets.TEST_PG_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.9
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+      - name: Run tests with pytest
+        run: pytest
+        working-directory: ${{ env.working-directory }}
